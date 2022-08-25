@@ -6,10 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login-Form</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=DynaPuff' rel='stylesheet'>
+    <script src="login.js" defer></script>
 </head>
 <body>
-    <div>
+    <!-- This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi!
+
+Sign up now to get started. -->
+
+<video src="Pexels Videos 1409899.mp4" muted loop autoplay></video>
+<div class="container">
+    <div class="logo-image">
+        <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="logo">
+        <h1 id="logo-text">LOGIN FORM</h1>
+    </div>
+    <div class="form-container">
+        <div class="details">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+            <p>Sign up now to get started!!</p>
+            <p>You know you want to</p>
+            <p>Let's do this!!</p>
+        </div>
+        <div class="form-details">
+            <form action="" autocomplete="off">
+                <div class="username">
+                    <div class="label1">
+                        
+                        <label for="name1">First Name</label>
+                        <input type="text" name="name1" id="name1" minlength="3" required placeholder="Enter your first name">
+                    </div>
+                    <div class="label1">
+                        <label for="name2"> Last Name</label>
+                        <input type="text" name="name2" required placeholder="Enter your last name">
+                    </div>
+                </div>
+                <div class="contact-details">
+                    <div class="label1">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" required placeholder="Enter your email">
+                    </div>
+                    <div class="label1">
+                        <label for="phone">Phone Number</label>
+                        <input type="number" name="phone" required placeholder="Enter your number">
+                    </div>
+                </div>
+
+                <div class="password-details">
+                    <div class="label1">
+                        <label for="pass">Password</label>
+                        <input type="text" name="pass" onchange="onChange()" required placeholder="Enter your Password">
+
+                    </div>
+                    <div class="label1">
+                        <label for="cnfrm"> Confirm Password</label>
+                        <input type="text" name="cnfrm" onchange="onChange()" required placeholder="Re-Enter your password">
+                    </div>
+                </div>        
+                <div class="buttons">
+                    <button type="submit">Create Account</button>
+                  </div>
+                  <div class="register">
+                    <p>Already have an account?&nbsp;<a href="#"> Log In</a></p>
+                </div>  
+            </form>
+          
+        </div>
+        
         
     </div>
+</div>
 </body>
 </html>

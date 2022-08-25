@@ -2,12 +2,19 @@
 
 html {
     line-height: 1.15; /* 1 */
+    overflow: hidden;
 }
 
 
 body {
     margin: 0;
-    background-color: black;
+    position: relative;
+    /* background-color: black; */
+}
+
+body>img
+{
+    width: 100%;
 }
 
 button,
@@ -19,5 +26,157 @@ textarea {
   font-size: 100%; 
   line-height: 1.15; 
   margin: 0; 
+}
+
+
+.container
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:0%
+}
+
+.logo-image
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(0, 0, 0, 0.5);
+}
+
+#logo-text
+{
+    font-style: italic;
+    font-family: 'DynaPuff',sans-serif;
+    color: aquamarine;
+    border-radius: 5px;
+}
+
+.logo-image>img
+{
+    width: 20%;
+}
+
+.form-container
+{
+    
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.details
+{
+    display: flex;
+    color: black;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    /* padding: 50px; */
+    padding: 5%;
+    color: aquamarine;
+    font-size: bold;
+    font-family: 'DynaPuff',sans-serif;
+    font-size: 18px;
+
+}
+
+.details > p:nth-child(2)
+{
+    margin-top: 0%;
+}
+
+.details >p:nth-child(3)
+{
+    font-style: italic;
+}
+
+label
+{
+    color: white;
+}
+
+.form-details,form
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-details{
+    gap: 3em;
+}
+
+.username,.contact-details,.password-details
+{
+    display: flex;
+    gap: 25%;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.label1
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'DynaPuff',sans-serif;
+}
+
+
+input{
+    border-radius: 5px;
+    padding: 5px;
+}
+
+label{
+    letter-spacing: 2px;
+    color: aquamarine;
+}
+
+.buttons
+{
+    display: flex;
+    margin-top: 7%;
+   justify-content: center;
+}
+
+.register
+{
+    display: flex;
+    margin-top: 2%;
+   justify-content: center;
+   color: aquamarine;
+   font-family: 'DynaPuff';
+}
+
+button
+{
+    padding: 10px;
+    border-radius: 5px;
+    width: 22%;
+    font-family: 'DynaPuff',sans-serif;
+    letter-spacing: 1px;
+    
+}
+
+button:hover
+{
+    cursor: pointer;
+    background-color: aquamarine;
+}
+
+input:invalid
+{
+   border: 2px solid red;
+}
+
+input:valid
+{
+    border: 1px solid aquamarine;
 }
 
